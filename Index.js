@@ -7,7 +7,8 @@ $(document).ready(function(event) {
 });
 //prevents form submission
 
-$('input').on('click', 'keydown', function(event) {
+//$('input').on('click', 'keydown', function(event) {
+  $('#js-shopping-list-form').on('submit', function(event) {
     const newItem = $(shopping-list-entry).val()
     newArray.push(newItem);
     return `<li>
